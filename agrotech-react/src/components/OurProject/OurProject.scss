@@ -1,0 +1,104 @@
+@use '../../styles/variables' as v;
+
+// Titulo 
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2{
+    color: v.$color-p;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+// Imagem
+
+.imagem_lateral {
+    flex: 0 0 45%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+// Caixas 
+
+.project-content {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 5%;
+}
+
+.caixas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    background-color: v.$background-projects;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+} 
+
+.boxes .material-symbols-outlined,
+.fa-whatsapp {
+    text-align: center;
+    background-color: v.$text-color;
+    padding: 20px;
+    margin-top: -4rem;
+    
+    width: 5.5rem;
+    border-radius: 40px;
+    color: v.$color-p2;
+    font-size: 2.5rem;
+}
+
+// Titulo caixas 
+
+.boxes h4 {
+    font-size: 1.2rem;
+    color: v.$color-p2;
+}
+
+// Paragrafos
+
+.boxes p {
+    font-weight: 400;
+    color: #292828;
+}
+
+.boxes .frase {
+    font-weight: 600;
+}
+
+.boxes:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+// Media 
+
+@media (max-width: 768px) {
+    .imagem_lateral {
+        display: none;
+    }
+
+    .caixas {
+        margin-top: 4rem;
+    }
+}

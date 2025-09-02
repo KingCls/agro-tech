@@ -1,0 +1,73 @@
+@use '../../styles/variables' as v;
+
+// Titulo hero
+
+.hero_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 130vh;
+    padding-top: 40px;
+}
+
+.container_hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.text_hero h1 {
+    color: v.$text-color;
+    font-size: v.$font-size-h2;
+    font-weight: 700;
+    margin: 0;
+}   
+
+// Botão
+
+.btn_saiba {
+    font-family: v.$font-family;
+    font-weight: 600;
+    font-size: v.$font-btn-hero;
+    color: v.$text-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+
+    display: inline-block;
+    margin-top: 2em;
+    cursor: pointer;
+    padding: 20px 40px;
+    transition: all 0.3s ease;
+}
+
+.btn_saiba:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+//  Responsividade
+
+@media (max-width: 768px) {
+    .hero_section{
+        justify-content: center;
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+
+    .text_hero h1 {
+        font-size: 3rem;
+    }
+
+    .btn_saiba {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

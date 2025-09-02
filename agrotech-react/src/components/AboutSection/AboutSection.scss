@@ -1,0 +1,79 @@
+@use '../../styles/variables' as v;
+
+// Descrição 
+
+.descricao_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: 4rem;
+}
+
+.descricao {
+    background-color: v.$text-color;
+    border-radius: 50px;
+    padding: 2rem;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.caixas_hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.caixas span {
+    color: v.$color-p;
+    font-size: 3rem;
+}
+
+.caixas h4 {
+    color: v.$color-p;
+    font-size: 1.3rem;
+}
+
+.caixas p {
+    text-align: justify;
+    font-weight: v.$font-weight;
+}
+
+.caixas .project_link {
+    text-align: left;
+    margin-top: auto;
+    width: 100%;
+}
+
+hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3px;
+    width: 80%;
+    background-color: #888787;
+    border: none;
+    border-radius: 10px;
+}
+
+// Responsividade
+
+@media (max-width: 768px) {
+    // Descrição
+    .caixas_hero {
+        flex-direction: column;
+    }
+}

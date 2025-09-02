@@ -1,0 +1,55 @@
+@use '../../styles/variables' as v;
+
+.botao_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000; 
+
+    background-color: v.$background-btn-top; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0; 
+    visibility: hidden; 
+    transform: translateY(20px); 
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0); 
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.back-to-top:hover {
+    transform: translateY(-2px);
+    background-color: v.$background-btn-top-hover;
+}
+
+
+
