@@ -1,4 +1,5 @@
-@import '../../styles/variables';
+@use 'sass:color';
+@use '../../styles/variables' as *;
 
 .tech-quiz-section {
     padding: 80px 20px;
@@ -32,8 +33,13 @@
             background: white;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(44, 85, 48, 0.1);
+            transition: all 0.3s ease;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+            &:hover {
+                box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+                transform: translateY(-1px);
+            }
 
             .preview-features {
                 display: flex;
@@ -61,7 +67,7 @@
             }
 
             .start-quiz-btn {
-                background: linear-gradient(135deg, $background-btn-top 0%, darken($background-btn-top, 10%) 100%);
+                background: linear-gradient(135deg, $background-btn-top 0%, color.adjust($background-btn-top, $lightness: -10%) 100%);
                 color: white;
                 border: none;
                 padding: 18px 40px;
@@ -82,8 +88,8 @@
 
                 &:hover {
                     transform: translateY(-3px);
-                    box-shadow: 0 12px 35px rgba(44, 85, 48, 0.4);
-                    background: linear-gradient(135deg, darken($background-btn-top, 5%) 0%, darken($background-btn-top, 15%) 100%);
+                    box-shadow: 0 12px 35px rgba(102, 129, 105, 0.4);
+                    background: linear-gradient(135deg, color.adjust($background-btn-top, $lightness: -5%) 0%, color.adjust($background-btn-top, $lightness: -15%) 100%);
                 }
 
                 &:active {
@@ -167,7 +173,7 @@
 
                 .progress-fill {
                     height: 100%;
-                    background: linear-gradient(90deg, $background-btn-top, darken($background-btn-top, 10%));
+                    background: linear-gradient(90deg, $background-btn-top, color.adjust($background-btn-top, $lightness: -10%));
                     transition: width 0.5s ease;
                     border-radius: 3px;
                 }
@@ -368,7 +374,7 @@
                         font-family: $font-family;
 
                         &:hover {
-                            background: darken($background-btn-top, 10%);
+                            background: color.adjust($background-btn-top, $lightness: -10%);
                             transform: translateY(-2px);
                             box-shadow: 0 5px 15px rgba(44, 85, 48, 0.3);
                         }

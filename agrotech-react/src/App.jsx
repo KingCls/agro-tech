@@ -8,6 +8,7 @@ import BackToTop from './components/BackToTop/BackToTop.jsx';
 import SobreEmpresa from "./components/SobreEmpresa/SobreEmpresa";
 import FaleConosco from "./components/FaleConosco/FaleConosco";
 import TechQuiz from "./components/TechQuiz/TechQuiz";
+import ImpactCounter from "./components/ImpactCounter/ImpactCounter";
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   const sobreempresaRef = useRef(null);
   const faleconoscoRef = useRef(null);
   const quizRef = useRef(null);
+  const impactRef = useRef(null);
 
   const scrollToSection = (ref) => {
     window.scrollTo({
@@ -41,6 +43,7 @@ function App() {
           <HeroSection /> 
         </div>
         <AboutSection sectionRef={aboutSectionRef}/>
+        <ImpactCounter sectionRef={impactRef}/>
         <OurProject sectionRef={ourProjectSectionRef}/>
         <TechQuiz sectionRef={quizRef}/>
         <SobreEmpresa sectionRef={sobreempresaRef} />
