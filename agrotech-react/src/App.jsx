@@ -13,7 +13,6 @@ import { useEffect, useState } from 'react';
 
 function App() {
 
-  const aboutSectionRef = useRef(null);
   const ourProjectSectionRef = useRef(null);
   const questionsSectionRef = useRef(null);
   const sobreempresaRef = useRef(null);
@@ -33,7 +32,6 @@ function App() {
     <div id='top' className="app-container">
         <div className="landing">
           <Header 
-          scrollToAbout={() => scrollToSection(aboutSectionRef)}
           scrollToProject={() => scrollToSection(ourProjectSectionRef)}
           scrollToQuiz={() => scrollToSection(quizRef)}
           scrollToQuestions={() => scrollToSection(questionsSectionRef)}
@@ -42,7 +40,7 @@ function App() {
           />
           <HeroSection /> 
         </div>
-        <AboutSection sectionRef={aboutSectionRef}/>
+        <AboutSection />
         <ImpactCounter sectionRef={impactRef}/>
         <OurProject sectionRef={ourProjectSectionRef}/>
         <TechQuiz sectionRef={quizRef}/>

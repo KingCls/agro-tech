@@ -1,10 +1,10 @@
 import React from 'react';
 import './AboutSection.scss';
 
-function AboutSection ({ sectionRef }) {
+function AboutSection () {
     return (
         <>
-        <section ref={sectionRef} className='descricao_hero'>
+        <section className='descricao_hero'>
             <div className="descricao">
                 <div className="caixas_hero">
                     <div className="caixas">
@@ -16,7 +16,7 @@ function AboutSection ({ sectionRef }) {
 
                         <div className="project_link">
                             <p>Segue o link do vídeo do projeto</p>
-                            <a href='https://youtu.be/hbejT4zGrXo'>Clique aqui</a>
+                            <a href='https://youtu.be/Thgj3zSANx0'>Clique aqui</a>
                         </div>
                     </div>
                     <div className="caixas">

@@ -21,7 +21,6 @@ function Header({ scrollToAbout, scrollToProject, scrollToQuiz, scrollToQuestion
             </div>
 
             <nav className={`navbar ${menuAtivo ? 'navbar-ativa' : ''}`}>
-                <a onClick={scrollToAbout}>Sobre</a>
                 <a onClick={scrollToProject}>Nosso Projeto</a>
                 <a onClick={scrollToQuiz}>Quiz Tech</a>
                 <a onClick={scrollToSobreEmpresa}>Sobre a Empresa</a>
