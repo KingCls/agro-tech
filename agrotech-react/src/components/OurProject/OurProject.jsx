@@ -32,19 +32,23 @@ function OurProject ({ sectionRef }) {
                     </div>
                     <div className="boxes">
                         <span className="material-symbols-outlined">analytics</span>
-                        <h4>Monitoramento inteligente</h4>
+                        <h4>Relatório e Painel</h4>
                         <p>
-                            Monitore sua lavoura de forma inteligente utilizando sensores para coletar dados essenciais, além de imagens de satélite e drones para obter uma visão ampla e detalhada da sua produção.
+                            Acompanhe todas as informações da sua lavoura em
+                            relatórios completos e painéis interativos, facilitando
+                            a tomada de decisões com dados claros e em tempo real.
                         </p>
                         <p className='frase'>Tenha total visibilidade sobre sua lavoura</p>
                     </div>
                     <div className="boxes">
                         <i className="fa-brands fa-whatsapp"></i>
-                        <h4>Monitoramento inteligente</h4>
+                        <h4>Acessível via WhatsApp</h4>
                         <p>
-                            Monitore sua lavoura de forma inteligente utilizando sensores para coletar dados essenciais, além de imagens de satélite e drones para obter uma visão ampla e detalhada da sua produção.
+                            Tenha acesso a todas as informações da sua lavoura
+                            diretamente pelo WhatsApp, com praticidade e suporte
+                            onde e quando você precisar.
                         </p>
-                        <p className='frase'>Tenha total visibilidade sobre sua lavoura</p>
+                        <p className='frase'> Sua lavoura na palma da mão</p>
                     </div>
                 </div>
             </div>
