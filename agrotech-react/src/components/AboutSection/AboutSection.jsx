@@ -16,7 +16,7 @@ function AboutSection () {
 
                         <div className="project_link">
                             <p>Segue o link do vídeo do projeto</p>
-                            <a href='https://youtu.be/Thgj3zSANx0'>Clique aqui</a>
+                            <a href='https://youtu.be/JwBGSLyXx9g'>Clique aqui</a>
                         </div>
                     </div>
                     <div className="caixas">
