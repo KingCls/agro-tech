@@ -9,6 +9,7 @@ import SobreEmpresa from "./components/SobreEmpresa/SobreEmpresa";
 import FaleConosco from "./components/FaleConosco/FaleConosco";
 import TechQuiz from "./components/TechQuiz/TechQuiz";
 import ImpactCounter from "./components/ImpactCounter/ImpactCounter";
+import ClimateSimulator from "./components/ClimateSimulator/ClimateSimulator";
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   const faleconoscoRef = useRef(null);
   const quizRef = useRef(null);
   const impactRef = useRef(null);
+  const climateSimulatorRef = useRef(null);
 
   const scrollToSection = (ref) => {
     window.scrollTo({
@@ -37,6 +39,7 @@ function App() {
           scrollToQuestions={() => scrollToSection(questionsSectionRef)}
           scrollToSobreEmpresa={() => scrollToSection(sobreempresaRef)}
           scrollToFaleConosco={() => scrollToSection(faleconoscoRef)}
+          scrollToClimateSimulator={() => scrollToSection(climateSimulatorRef)}
           />
           <HeroSection /> 
         </div>
@@ -44,6 +47,7 @@ function App() {
         <ImpactCounter sectionRef={impactRef}/>
         <OurProject sectionRef={ourProjectSectionRef}/>
         <TechQuiz sectionRef={quizRef}/>
+        <ClimateSimulator sectionRef={climateSimulatorRef}/>
         <SobreEmpresa sectionRef={sobreempresaRef} />
         <FaleConosco sectionRef={faleconoscoRef} />
         <Questions sectionRef={questionsSectionRef}/>
